@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
-  <link href="pyro.css" rel="stylesheet" />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="pyro.css">
   <title>Temblador Pyrography & Woodworking</title>
 </head>
 
 <body>
 
   <nav>
-    <a href="#shop" target="_self" class="nav-link">shop</a>|
-    <a href="#quote" target="_self" class="nav-link">quote</a>|
+    <a href="#info" target="_self" class="nav-link">about</a>|
     <a href="#gallery" target="_self" class="nav-link">gallery</a>|
-    <a href="#info" target="_self" class="nav-link">about</a>
+    <a href="#shop" target="_self" class="nav-link">shop</a>|
+    <a href="#quote" target="_self" class="nav-link">quote</a>
   </nav>
 
   <header>
