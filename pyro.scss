@@ -1,0 +1,89 @@
+@mixin flex($direction: row, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  @include flex(column);
+  font-family: "Gupter", serif;
+  height: 92vh;
+  padding: 5px;
+
+  img {
+    width: 40%;
+  }
+  svg {
+    width: 50%;
+
+    text {
+      font-family: "Poppins", serif;
+    }
+  }
+}
+
+nav {
+  @include flex(row, space-around);
+  bottom: 0;
+  background: black;
+  color: white;
+  height: 8vh;
+  padding: 13px;
+  position: fixed;
+  width: 100%;
+
+  .nav-link {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration-color: gray;
+  }
+}
+
+main {
+  padding-bottom: 10vh;
+
+  #info {
+    @include flex(column);
+    text-align: justify;
+
+    img {
+      width: 75%;
+      height: auto;
+    }
+  }
+
+  #shop {
+    @include flex(row);
+    flex-wrap: wrap;
+
+    .shop-card {
+      @include flex(column);
+      width: 200px;
+      height: 200px;
+      background: gray;
+
+      .item-image {
+        width: 90%;
+        height: auto;
+        max-height: 90%;
+      }
+    }
+  }
+
+  #quote-form {
+    @include flex(column);
+  }
+}
