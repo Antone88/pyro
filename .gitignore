@@ -1,0 +1,7 @@
+*.map
+*.css
+**/img
+**/res
+/db.php
+img/pyro-logo.svg
+*.webp
